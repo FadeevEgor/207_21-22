@@ -11,18 +11,18 @@ Matlab позволяет нативно компилировать `mex` фун
 
 Скачав установщик, открываем и на странице с конфигурацией важно правильно подобрать архитектуру вашего компьютера. Вероятнее всего вам нужны `Architecture: x86_64` и `Threads: win_32`.
 
-![picture](pictures/MinGW-options.png)
+![picture](pictures/MinGW-options.PNG)
 
 Нажимаем `next` и выбираем путь для установки. Тут важно выбрать **не** содержащий пробелов путь, т.е. путь по умолчания в "C:\Program Files\mingw-w64\..." не подходит. Выберите, например, "C:\mingw-w64". У меня MinGW уже был установлен в папке "C:\MinGW". Запомните эту папку. Путь к ней пригодится на следующем шаге. 
 
-![picture](pictures/MinGW-options.png)
+![picture](pictures/MinGW-folder.png)
 
 Нажимаем и ждём пока установится. Теперь, чтобы matlab знал где искать компилятор, необходимо добавить путь к папке с установленным MinGW в переменные среды. 
 
 `Этот компьютер` $->$ `Свойства системы` $->$ `Дополнительные параметры системы` $->$ `Переменные среды` $->$ `Создать` и в поле имя переменной вводим `MW_MINGW64_LOC`, а в поле `значение` вводим путь к папке с установленным MinGW. Жмём `Ок` несколько раз и на этом установка `MinGW` завершена.
 
 1. ![picture](pictures/This-Computer.png)
-2. ![picture](pictures/Properties.png)
+2. ![picture](pictures/Properties.PNG)
 3. ![picture](pictures/Additional-Properties.png)
 4. ![picture](pictures/env-variables.png)
 
@@ -39,5 +39,7 @@ mex -setup C++
 
 После чего в зависимости от выбранного компилятора вы должны увидеть одно из двух следующих сообщений:
 > MEX configured to use 'Microsoft Visual C++ 2019' for C++ language compilation.
+
 или
+
 > MEX configured to use 'MinGW64 Compiler (C++)' for C++ language compilation.
