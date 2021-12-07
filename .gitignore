@@ -32,3 +32,6 @@ codegen/
 
 # Octave session info
 octave-workspace
+
+# Visual Studio
+*.vs
