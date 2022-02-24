@@ -29,7 +29,11 @@ top=2cm,bottom=3cm,bindingoffset=0cm]{geometry}
 	\sum_{n=1}^{\infty} \dfrac{1}{n^2} = \dfrac{\pi^2}{6}.
 	\]
 	Постройте график погрешности оценки $\hat{\pi}(N)=\sqrt{6\sum_{n=1}^N 1/n^2}$ значения числа $\pi$ в зависимости от $N$. Вычислить сумму элементов списка можно функцией \textbf{Total}. Просуммировать значение функции в определенных точках можно функцией $ \textbf{Sum[}expression, \{x, x_{\min}, x_{\max}, \Delta x \}\textbf{]}$.  
-	\item Построить график ресурсоемкости вычисления $n$-го числа в зависимости от $n$. Используйте функцию \textbf{ListPlot} или \textbf{ListLinePlot}. 
+	\item Построить график ресурсоемкости вычисления $n$-го числа в зависимости от $n$. Используйте функцию \textbf{ListPlot} или \textbf{ListLinePlot}.
+	\item Реализуйте функцию, которая для произвольного $N$ вычисляет сумму ряда
+	$
+	\sum_{n=0}^{N}\sin^2 \frac{\pi}{2n}.
+	$
 	
 \end{enumerate}
 \end{document}   
