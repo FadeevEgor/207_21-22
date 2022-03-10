@@ -1,0 +1,65 @@
+\documentclass[preview]{standalone}
+\RequirePackage[russian]{babel} % русификация
+\usepackage{amsmath,amsthm,amssymb,amsfonts, fancyhdr}
+\usepackage[left=2cm,right=2cm,
+top=2cm,bottom=3cm,bindingoffset=0cm]{geometry}
+
+
+\newcommand{\dd}[2]{
+\dfrac{\partial #1}{\partial #2}
+}
+
+% prevent line break in inline mode
+\binoppenalty=\maxdimen
+\relpenalty=\maxdimen
+
+\begin{document}
+\begin{enumerate}
+	\item Найдите приближенное решение уравнения
+	\[
+	1-x^2 = \sin x.
+	\]
+	\item Найдите приближенное решение уравнения
+	\[
+	e^{-x^2}=\sin x.
+	\]
+	\item Найдите размеры цилиндра максимального объема, который вписывается в правильный конус высоты $h$ и основанием радиуса $r$.
+	\item Найдите точки экстремума функции 
+	\[
+	y=\int\limits_{0}^x \dfrac{\sin t}{t} dt 
+	\]
+	в области $x>0$.
+	\item Покажите, что $\nabla{u} = 0$, если $u = (x-y)(y-z)(z-x)$.
+	\item найдите все матрицы, перестановочные ($AB=BA$) с 
+	\[
+	A=\begin{pmatrix}
+		1 & 2 \\
+		3 & 4
+	\end{pmatrix}.
+	\]  
+	\item Определите производную $y'$ от функции заданной неявно
+	\[
+	y=x+\arctan{x}.
+	\]
+	\item Аналитически решите дифференциальное уравнение
+	\[
+	y'(x)=x^3\cos x
+	\]
+	в общем случае и с условием $y(3)=6$.
+	\item Символьно решите 
+	\[
+	y''(x)+y'(x)=x^2\sqrt{x},
+	\]
+	подставьте вместо константы $C[1]$ значение 3, а вместо $C[2]$ значение 6.
+	\item Решите систему уравнений 
+	\[
+	\begin{cases}
+		\dot{x} = 10(y-x)\\
+		\dot{y} = x(28-z) - y\\
+		\dot{z} = x y - \dfrac{8}{3} z
+	\end{cases}
+	\]
+	и постройте её решение.
+	
+\end{enumerate}
+\end{document}   
